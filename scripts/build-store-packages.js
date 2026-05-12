@@ -41,16 +41,16 @@ function makeManifest(target) {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
 
   if (target === 'firefox') {
-    manifest.data_collection_permissions = {
-      required: [],
-      optional: []
-    };
     manifest.background = {
       scripts: ['background.js']
     };
     manifest.browser_specific_settings = {
       gecko: {
         id: 'secfetcher@jishangiras.com',
+        data_collection_permissions: {
+          required: ['none'],
+          optional: []
+        },
         strict_min_version: '121.0'
       }
     };
