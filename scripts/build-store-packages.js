@@ -51,7 +51,14 @@ function makeManifest(target) {
           required: ['none'],
           optional: []
         },
-        strict_min_version: '121.0'
+        strict_min_version: '140.0'
+      },
+      gecko_android: {
+        data_collection_permissions: {
+          required: ['none'],
+          optional: []
+        },
+        strict_min_version: '142.0'
       }
     };
   } else {
