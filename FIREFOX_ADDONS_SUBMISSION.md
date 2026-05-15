@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-firefox-v1.1.zip
+dist/secfetcher-firefox-v1.2.zip
 ```
 
 Firefox needs a Firefox-specific package because Firefox does not support `background.service_worker` in the same way Chrome and Edge do. The Firefox package uses:
@@ -47,7 +47,7 @@ Search a ticker symbol and fetch recent 10-K, 10-Q, 8-K, DEF 14A proxy statement
 
 Each filing can be opened directly on sec.gov or downloaded as the original SEC filing document.
 
-SECFetcher does not collect, sell, or share personal data.
+SECFetcher does not collect, sell, or share personal data. The popup includes an optional external donation link; donations are not required and do not unlock features.
 ```
 
 Categories:
@@ -74,6 +74,12 @@ Support site:
 https://github.com/jishangiras/SECFetcher/issues
 ```
 
+Contributions URL:
+
+```text
+Leave blank if using the Stripe donation link. AMO only accepts specific supported contribution domains in this field.
+```
+
 Privacy policy:
 
 Use the contents of:
@@ -91,7 +97,7 @@ The storage permission stores the latest rendered popup results locally in the b
 
 The downloads permission is used only when the user clicks Download on a filing result.
 
-No analytics, tracking, accounts, ads, or remote telemetry are used.
+No analytics, tracking, accounts, ads, required payments, or remote telemetry are used. The optional donation link opens Stripe outside the extension; the extension does not process payment information.
 ```
 
 ## Manual Test

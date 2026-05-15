@@ -1,15 +1,14 @@
-# SECFetcher v1.1.0
+# SECFetcher v1.2.0
 
 SECFetcher is a lightweight browser extension for fast SEC EDGAR filing lookup by ticker.
 
-This release adds insider ownership filings while keeping the extension simple, local-first, and focused on public SEC data.
+This release adds optional donation-link support while keeping the extension simple, local-first, and focused on public SEC data.
 
 ## What's New
 
-- Added insider filings lookup for SEC Forms 3, 4, and 5.
-- Updated the popup with a dedicated `Insider Filings (Forms 3, 4, 5)` button.
-- Updated the store screenshot to show insider filings results.
-- Updated package metadata and listing copy for Edge and Firefox.
+- Added an optional Stripe donation link in the popup footer.
+- Clarified in docs and store notes that donations are optional and do not unlock features.
+- Removed stale placeholder Firefox metadata from the base manifest; Firefox-specific metadata is generated in the Firefox package.
 
 ## Core Features
 
@@ -18,29 +17,29 @@ This release adds insider ownership filings while keeping the extension simple, 
 - Open filings directly on sec.gov.
 - Download original SEC filing documents.
 - Stores only the latest visible popup results locally in the browser.
-- No analytics, no tracking, no account, and no remote telemetry.
+- No analytics, no tracking, no account, no required payment, and no remote telemetry.
 
 ## Release Assets
 
 Upload these files to this GitHub release:
 
-- `dist/secfetcher-edge-v1.1.zip`
-- `dist/secfetcher-firefox-v1.1.zip`
+- `dist/secfetcher-edge-v1.2.zip`
+- `dist/secfetcher-firefox-v1.2.zip`
 - `store-assets/secfetcher-screenshot-1280x800.png`
 
 SHA-256:
 
 ```text
-fdf304316b33bfb1be8c45a043b5e10ab73a84f64988ea48d2130578e3927d0b  secfetcher-edge-v1.1.zip
-bf918e1f1231d3008be7f35076376e1f6eeabd844dd76a5c8429b83bc2f556b9  secfetcher-firefox-v1.1.zip
-cbbd9f93f009aca667fa8e82400895810e6dffd51d3ae7966cb26caa08e9941b  secfetcher-screenshot-1280x800.png
+a544787d30ed973f6804645956752af8269998326c2b959eaa0e10ee69c824c0  secfetcher-edge-v1.2.zip
+98eb2eead0dab0ee2bd2f5e5a60c21589d89d31f02805b061950eb1fe282cf93  secfetcher-firefox-v1.2.zip
+16bc6476458416c3036f8ad0e3a31be301a688bc12d2e36fad927509b643fb69  secfetcher-screenshot-1280x800.png
 ```
 
 ## Install From Release
 
 Chromium browsers:
 
-1. Download `secfetcher-edge-v1.1.zip`.
+1. Download `secfetcher-edge-v1.2.zip`.
 2. Unzip it.
 3. Open your browser extensions page.
 4. Enable developer mode.
@@ -54,8 +53,8 @@ Firefox:
 
 ## Store Status
 
-- Firefox Add-ons: v1.1 submitted.
-- Microsoft Edge Add-ons: v1.0 is in review; v1.1 package is ready for submission after current review finishes.
+- Firefox Add-ons: v1.1 submitted; v1.2 package is ready for a follow-up donation-link update.
+- Microsoft Edge Add-ons: v1.0 is in review; v1.2 package is ready for submission after current review finishes.
 
 ## Keywords
 

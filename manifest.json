@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SECFetcher",
   "short_name": "SECFetcher",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Fast SEC EDGAR filing lookup for reports, events, proxies, and insider filings by ticker.",
   "homepage_url": "https://github.com/jishangiras/SECFetcher",
   "permissions": ["storage", "downloads"],
@@ -22,10 +22,5 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "secfetcher@yourname.com"
-    }
   }
 }

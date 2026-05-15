@@ -33,6 +33,14 @@ The SEC EDGAR website is powerful, but repeated lookup is slow when you just wan
 
 No account, no analytics, no tracking.
 
+## Support
+
+SECFetcher is free. If it saves you time, consider donating:
+
+**Donate to support SECFetcher**: https://donate.stripe.com/6oU4gzcYecNU6ha1Vs2sM01
+
+Donations are optional and do not unlock features. SECFetcher does not process payments in the extension; the donation link opens Stripe in the browser.
+
 ## Install From Source
 
 ### Chrome, Edge, Brave, Arc, and other Chromium browsers
@@ -59,8 +67,8 @@ Firefox temporary add-ons are removed when Firefox restarts. A signed Firefox Ad
 Packaged ZIPs are generated locally and attached to GitHub Releases:
 
 ```text
-dist/secfetcher-edge-v1.1.zip
-dist/secfetcher-firefox-v1.1.zip
+dist/secfetcher-edge-v1.2.zip
+dist/secfetcher-firefox-v1.2.zip
 ```
 
 See [RELEASE.md](RELEASE.md) for build, verification, and release steps.

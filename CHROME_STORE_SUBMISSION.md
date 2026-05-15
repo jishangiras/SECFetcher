@@ -60,7 +60,7 @@ Publish `PRIVACY_POLICY.md` somewhere public, then use that URL in the Chrome We
 
 ## Required Before Submit
 
-- Upload package: `dist/secfetcher-edge-v1.1.zip`
+- Upload package: `dist/secfetcher-edge-v1.2.zip`
 - Upload at least one screenshot: 1280x800 or 640x400.
 - Provide a public privacy policy URL.
 - Confirm developer account/trader status, distribution countries, and pricing.

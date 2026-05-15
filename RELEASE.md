@@ -7,20 +7,20 @@ This project is a plain WebExtension. There is no bundled/minified build step; r
 Version:
 
 ```text
-1.1
+1.2
 ```
 
 GitHub release tag:
 
 ```text
-v1.1.0
+v1.2.0
 ```
 
 Release assets:
 
 ```text
-dist/secfetcher-edge-v1.1.zip
-dist/secfetcher-firefox-v1.1.zip
+dist/secfetcher-edge-v1.2.zip
+dist/secfetcher-firefox-v1.2.zip
 store-assets/secfetcher-screenshot-1280x800.png
 ```
 
@@ -34,8 +34,8 @@ node scripts/build-store-packages.js
 
 This creates:
 
-- `dist/secfetcher-edge-v1.1.zip`
-- `dist/secfetcher-firefox-v1.1.zip`
+- `dist/secfetcher-edge-v1.2.zip`
+- `dist/secfetcher-firefox-v1.2.zip`
 
 The Edge package uses Chromium Manifest V3 service workers.
 
@@ -70,8 +70,8 @@ node --check scripts/generate-store-screenshot.js
 Confirm packages include insider filings:
 
 ```sh
-unzip -p dist/secfetcher-edge-v1.1.zip popup.js | rg "fetch-insider|\\['3', '4', '5'\\]"
-unzip -p dist/secfetcher-firefox-v1.1.zip popup.js | rg "fetch-insider|\\['3', '4', '5'\\]"
+unzip -p dist/secfetcher-edge-v1.2.zip popup.js | rg "fetch-insider|\\['3', '4', '5'\\]"
+unzip -p dist/secfetcher-firefox-v1.2.zip popup.js | rg "fetch-insider|\\['3', '4', '5'\\]"
 ```
 
 Confirm unsafe HTML sinks are not used:
@@ -85,8 +85,8 @@ The command should return no matches.
 ## GitHub Release
 
 1. Push `main`.
-2. Create tag `v1.1.0`.
-3. Create a GitHub release from `v1.1.0`.
+2. Create tag `v1.2.0`.
+3. Create a GitHub release from `v1.2.0`.
 4. Paste the contents of `GITHUB_RELEASE.md`.
 5. Upload release assets from `dist/` and `store-assets/`.
 
@@ -94,12 +94,13 @@ The command should return no matches.
 
 Firefox:
 
-- Upload `dist/secfetcher-firefox-v1.1.zip`.
-- Version notes: `Added insider filings lookup for SEC Forms 3, 4, and 5.`
+- Upload `dist/secfetcher-firefox-v1.2.zip`.
+- Version notes: `Added an optional donation link in the popup footer. Donations are optional and do not unlock features.`
 - Source code question: choose `No`.
+- Contributions URL: leave blank if using the Stripe donation link because AMO supports only specific contribution URL domains.
 
 Edge:
 
-- Upload `dist/secfetcher-edge-v1.1.zip`.
-- If v1.0 is in review, wait for that review to complete before publishing v1.1.
-- Certification note: `Version 1.1 adds insider filings lookup for SEC Forms 3, 4, and 5.`
+- Upload `dist/secfetcher-edge-v1.2.zip`.
+- If v1.0 is in review, wait for that review to complete before publishing v1.2.
+- Certification note: `Version 1.2 adds an optional external Stripe donation link. Donations are not required, do not unlock features, and payment information is not processed by the extension.`

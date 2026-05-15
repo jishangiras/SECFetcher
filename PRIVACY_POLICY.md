@@ -10,6 +10,8 @@ SECFetcher does not collect, sell, rent, or share personal information.
 
 The extension does not use analytics, advertising trackers, account login, or remote telemetry.
 
+SECFetcher includes an optional donation link. Donations are handled by Stripe outside the extension. SECFetcher does not process, store, or transmit payment information.
+
 ## Local Storage
 
 SECFetcher may store the latest filing results locally in your browser so the popup can restore the previous results when reopened. This information stays on your device and is not transmitted to the developer.

@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-edge-v1.1.zip
+dist/secfetcher-edge-v1.2.zip
 ```
 
 Microsoft Edge Add-ons accepts a `.zip` extension package that contains the extension manifest and required files.
@@ -47,6 +47,8 @@ Use the popup to search a ticker symbol and fetch recent:
 Each result links directly to the filing on sec.gov and includes a Download button for saving the original SEC filing document.
 
 SECFetcher is intentionally narrow: it only looks up public SEC filing data and does not collect, sell, or share personal data.
+
+An optional donation link is available in the popup footer. Donations are not required and do not unlock features.
 ```
 
 Search terms:
@@ -112,4 +114,10 @@ icons/icon128.png
 6. Click Open and confirm the SEC filing opens.
 7. Click Download and confirm the filing document downloads.
 8. Click the X inside the input and confirm the ticker and results clear.
+```
+
+Certification note for optional donation link:
+
+```text
+SECFetcher is free to use. The popup includes an optional external Stripe donation link. Donations are not required, do not unlock features, and payment information is not processed by the extension.
 ```
