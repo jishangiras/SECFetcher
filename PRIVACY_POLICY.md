@@ -2,7 +2,7 @@
 
 Effective date: May 12, 2026
 
-SECFetcher is a browser extension for finding, opening, and downloading public SEC filings by ticker symbol.
+SECFetcher is a browser extension for finding, opening, and downloading public SEC filings by ticker symbol, including periodic reports, material event reports, proxy statements, and insider ownership filings.
 
 ## Data Collection
 

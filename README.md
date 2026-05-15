@@ -2,7 +2,7 @@
 
 Fast SEC EDGAR filing lookup from your browser.
 
-SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker. It is built for investors, analysts, founders, students, and builders who often need fast access to annual reports, quarterly reports, material event filings, and proxy statements.
+SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker. It is built for investors, analysts, founders, students, and builders who often need fast access to annual reports, quarterly reports, material event filings, proxy statements, and insider ownership reports.
 
 ![SECFetcher screenshot](store-assets/secfetcher-screenshot-1280x800.png)
 
@@ -13,6 +13,7 @@ SECFetcher is a lightweight browser extension for quickly finding, opening, and 
 - View 10-K and 10-Q annual and quarterly filings.
 - View 8-K material event filings.
 - View DEF 14A proxy statements.
+- View Forms 3, 4, and 5 insider ownership filings.
 - Open filings directly on sec.gov.
 - Download the original SEC filing document.
 - Clear ticker and results with one click.
@@ -26,6 +27,9 @@ The SEC EDGAR website is powerful, but repeated lookup is slow when you just wan
 - `10-Q`
 - `8-K`
 - `DEF 14A`
+- `Form 3`
+- `Form 4`
+- `Form 5`
 
 No account, no analytics, no tracking.
 
@@ -55,7 +59,7 @@ Firefox temporary add-ons are removed when Firefox restarts. A signed Firefox Ad
 A packaged Chrome/Chromium ZIP is available in local builds as:
 
 ```text
-dist/secfetcher-chrome-v1.0.zip
+dist/secfetcher-edge-v1.1.zip
 ```
 
 GitHub Releases will be the recommended place to download stable ZIP builds.
@@ -84,7 +88,7 @@ This project is not affiliated with or endorsed by the U.S. Securities and Excha
 
 ## Keywords
 
-SEC filings, SEC EDGAR, EDGAR browser extension, 10-K lookup, 10-Q lookup, 8-K lookup, proxy statement, DEF 14A, annual report, quarterly report, financial filings, stock ticker SEC filings, investor research, public company filings, Chrome extension, Edge extension, Firefox extension.
+SEC filings, SEC EDGAR, EDGAR browser extension, 10-K lookup, 10-Q lookup, 8-K lookup, proxy statement, DEF 14A, Form 3, Form 4, Form 5, insider filings, insider transactions, beneficial ownership, annual report, quarterly report, financial filings, stock ticker SEC filings, investor research, public company filings, Chrome extension, Edge extension, Firefox extension.
 
 ## Development
 
@@ -108,7 +112,7 @@ node --check background.js
 Create a Chrome/Chromium ZIP:
 
 ```sh
-zip -r dist/secfetcher-chrome-v1.0.zip manifest.json background.js popup.html popup.js icons
+node scripts/build-store-packages.js
 ```
 
 ## Roadmap

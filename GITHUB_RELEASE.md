@@ -1,4 +1,4 @@
-# SECFetcher v1.0.0
+# SECFetcher v1.1.0
 
 SECFetcher is a lightweight browser extension for fast SEC EDGAR filing lookup by ticker.
 
@@ -6,6 +6,7 @@ SECFetcher is a lightweight browser extension for fast SEC EDGAR filing lookup b
 
 - Search ticker symbols against official SEC company data.
 - Fetch recent 10-K, 10-Q, 8-K, and DEF 14A proxy filings.
+- Fetch Forms 3, 4, and 5 insider ownership filings.
 - Open filings directly on sec.gov.
 - Download original SEC filing documents.
 - Works as a plain WebExtension with no build step.
@@ -13,7 +14,7 @@ SECFetcher is a lightweight browser extension for fast SEC EDGAR filing lookup b
 
 ## Install
 
-Download `secfetcher-chrome-v1.0.zip` from the release assets, unzip it, then load the folder as an unpacked extension from your browser's extensions page.
+Download the latest `secfetcher-edge-v1.1.zip` or `secfetcher-firefox-v1.1.zip` release asset, unzip it if needed, then load or submit it for your target browser.
 
 Supported targets:
 
@@ -26,4 +27,4 @@ Supported targets:
 
 ## Keywords
 
-SEC EDGAR, SEC filings, 10-K, 10-Q, 8-K, DEF 14A, proxy statement, annual report, quarterly report, public company filings, investor research, browser extension.
+SEC EDGAR, SEC filings, 10-K, 10-Q, 8-K, DEF 14A, proxy statement, Form 3, Form 4, Form 5, insider filings, beneficial ownership, annual report, quarterly report, public company filings, investor research, browser extension.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0 - 2026-05-15
+
+- Added insider filings lookup for SEC Forms 3, 4, and 5.
+- Updated store packages and screenshots for insider filings support.
+
 ## 1.0.0 - 2026-05-12
 
 - Initial public release.

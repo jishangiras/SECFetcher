@@ -6,7 +6,7 @@ Name:
 SECFetcher
 
 Short description:
-Quickly find, open, and download SEC 10-K, 10-Q, 8-K, and proxy filings by ticker.
+Quickly find, open, and download SEC reports, events, proxies, and insider filings by ticker.
 
 Detailed description:
 SECFetcher gives investors, analysts, and builders a fast way to jump from a stock ticker to recent SEC filings.
@@ -15,6 +15,7 @@ Use the popup to search a ticker symbol and fetch:
 - 10-K and 10-Q annual and quarterly reports
 - 8-K material event filings
 - DEF 14A proxy statements
+- Forms 3, 4, and 5 insider ownership filings
 
 Each result links directly to the filing on sec.gov and includes a Download button for saving the original SEC filing document to your browser's downloads folder.
 
@@ -32,7 +33,7 @@ Use the developer email on your Chrome Web Store developer account.
 ## Privacy Tab
 
 Single purpose:
-SECFetcher lets users search a public company ticker and quickly open or download recent SEC filings from sec.gov.
+SECFetcher lets users search a public company ticker and quickly open or download recent SEC filings from sec.gov, including Forms 3, 4, and 5 insider ownership filings.
 
 Permission justifications:
 - storage: Saves the latest rendered filing results locally so the popup can restore them when reopened.
@@ -59,7 +60,7 @@ Publish `PRIVACY_POLICY.md` somewhere public, then use that URL in the Chrome We
 
 ## Required Before Submit
 
-- Upload package: `dist/secfetcher-chrome-v1.0.0.zip`
+- Upload package: `dist/secfetcher-edge-v1.1.zip`
 - Upload at least one screenshot: 1280x800 or 640x400.
 - Provide a public privacy policy URL.
 - Confirm developer account/trader status, distribution countries, and pricing.

@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-firefox-v1.0.zip
+dist/secfetcher-firefox-v1.1.zip
 ```
 
 Firefox needs a Firefox-specific package because Firefox does not support `background.service_worker` in the same way Chrome and Edge do. The Firefox package uses:
@@ -35,7 +35,7 @@ SECFetcher
 Summary:
 
 ```text
-Fast SEC EDGAR filing lookup for 10-K, 10-Q, 8-K, and proxy statements by ticker.
+Fast SEC EDGAR filing lookup for reports, events, proxies, and insider filings by ticker.
 ```
 
 Description:
@@ -43,7 +43,7 @@ Description:
 ```text
 SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker.
 
-Search a ticker symbol and fetch recent 10-K, 10-Q, 8-K, and DEF 14A proxy statement filings from official SEC data sources.
+Search a ticker symbol and fetch recent 10-K, 10-Q, 8-K, DEF 14A proxy statement, and Forms 3, 4, and 5 insider ownership filings from official SEC data sources.
 
 Each filing can be opened directly on sec.gov or downloaded as the original SEC filing document.
 
@@ -59,7 +59,7 @@ Other
 Tags:
 
 ```text
-sec, edgar, filings, finance, investing, 10-k, 10-q, 8-k, proxy
+sec, edgar, filings, finance, investing, 10-k, 10-q, 8-k, proxy, insider
 ```
 
 Homepage:

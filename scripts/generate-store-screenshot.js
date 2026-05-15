@@ -13,17 +13,17 @@ function iconDataUrl() {
 
 function buildHtml() {
   const sampleResults = `
-    <h3>10-K &amp; 10-Q for NVDA</h3>
+    <h3>Insider Filings for NVDA</h3>
     <div class="year-header">2026</div>
     <div class="filing">
-      <strong>10-Q</strong> - Filed 2026-02-25<br><br>
+      <strong>4</strong> - Filed 2026-03-18<br><br>
       <div class="filing-actions">
         <button>Open</button>
         <button class="download-btn">Download</button>
       </div>
     </div>
     <div class="filing">
-      <strong>10-K</strong> - Filed 2026-01-29<br><br>
+      <strong>4</strong> - Filed 2026-02-26<br><br>
       <div class="filing-actions">
         <button>Open</button>
         <button class="download-btn">Download</button>
@@ -31,7 +31,7 @@ function buildHtml() {
     </div>
     <div class="year-header">2025</div>
     <div class="filing">
-      <strong>10-Q</strong> - Filed 2025-11-19<br><br>
+      <strong>3</strong> - Filed 2025-11-19<br><br>
       <div class="filing-actions">
         <button>Open</button>
         <button class="download-btn">Download</button>

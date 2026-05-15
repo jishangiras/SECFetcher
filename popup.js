@@ -276,3 +276,9 @@ document.getElementById('fetch-proxy').addEventListener('click', () => {
   if (!ticker) return alert("Please enter a ticker symbol");
   fetchFilings(ticker, ['DEF 14A'], "Proxy Statement");
 });
+
+document.getElementById('fetch-insider').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['3', '4', '5'], "Insider Filings");
+});

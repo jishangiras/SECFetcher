@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-edge-v1.0.zip
+dist/secfetcher-edge-v1.1.zip
 ```
 
 Microsoft Edge Add-ons accepts a `.zip` extension package that contains the extension manifest and required files.
@@ -29,7 +29,7 @@ SECFetcher
 Short description:
 
 ```text
-Fast SEC EDGAR filing lookup for 10-K, 10-Q, 8-K, and proxy statements by ticker.
+Fast SEC EDGAR filing lookup for reports, events, proxies, and insider filings by ticker.
 ```
 
 Description:
@@ -42,6 +42,7 @@ Use the popup to search a ticker symbol and fetch recent:
 - 10-Q quarterly reports
 - 8-K material event filings
 - DEF 14A proxy statements
+- Forms 3, 4, and 5 insider ownership filings
 
 Each result links directly to the filing on sec.gov and includes a Download button for saving the original SEC filing document.
 
@@ -51,7 +52,7 @@ SECFetcher is intentionally narrow: it only looks up public SEC filing data and 
 Search terms:
 
 ```text
-SEC, EDGAR, SEC filings, 10-K, 10-Q, 8-K, proxy statement, DEF 14A, annual report, quarterly report, finance, investing, investor research, stock ticker
+SEC, EDGAR, SEC filings, 10-K, 10-Q, 8-K, proxy statement, DEF 14A, insider filings, Form 4, beneficial ownership, finance, investing, investor research, stock ticker
 ```
 
 Category:

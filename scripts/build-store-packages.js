@@ -70,6 +70,7 @@ function makeManifest(target) {
 
 function buildTarget(target) {
   const buildDir = path.join(dist, target);
+  const version = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8')).version;
   cleanDir(buildDir);
 
   for (const file of commonFiles) {
@@ -79,7 +80,7 @@ function buildTarget(target) {
   copyDir(path.join(root, 'icons'), path.join(buildDir, 'icons'));
   fs.writeFileSync(path.join(buildDir, 'manifest.json'), makeManifest(target));
 
-  zipDir(buildDir, path.join(dist, `secfetcher-${target}-v1.0.zip`));
+  zipDir(buildDir, path.join(dist, `secfetcher-${target}-v${version}.zip`));
 }
 
 cleanDir(dist);
