@@ -56,13 +56,14 @@ Firefox temporary add-ons are removed when Firefox restarts. A signed Firefox Ad
 
 ## Download Package
 
-A packaged Chrome/Chromium ZIP is available in local builds as:
+Packaged ZIPs are generated locally and attached to GitHub Releases:
 
 ```text
 dist/secfetcher-edge-v1.1.zip
+dist/secfetcher-firefox-v1.1.zip
 ```
 
-GitHub Releases will be the recommended place to download stable ZIP builds.
+See [RELEASE.md](RELEASE.md) for build, verification, and release steps.
 
 ## Privacy
 
@@ -114,6 +115,8 @@ Create a Chrome/Chromium ZIP:
 ```sh
 node scripts/build-store-packages.js
 ```
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Roadmap
 
