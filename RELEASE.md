@@ -46,8 +46,7 @@ The Firefox package uses a Firefox-compatible background script manifest and Moz
 Run:
 
 ```sh
-NODE_PATH=/Users/jishangiras/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules \
-/Users/jishangiras/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/generate-store-screenshot.js
+node scripts/generate-store-screenshot.js
 ```
 
 Output:
