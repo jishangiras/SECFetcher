@@ -31,7 +31,7 @@ function cleanDir(dir) {
 
 function zipDir(sourceDir, zipPath) {
   fs.rmSync(zipPath, { force: true });
-  execFileSync('zip', ['-r', zipPath, '.'], {
+  execFileSync('zip', ['-X', '-D', '-r', zipPath, '.'], {
     cwd: sourceDir,
     stdio: 'inherit'
   });

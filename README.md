@@ -2,7 +2,7 @@
 
 Fast SEC EDGAR filing lookup from your browser.
 
-SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker. It is built for investors, analysts, founders, students, and builders who often need fast access to annual reports, quarterly reports, material event filings, proxy statements, and insider ownership reports.
+SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker. It is built for investors, analysts, founders, students, and builders who often need fast access to annual reports, quarterly reports, material event filings, proxy statements, insider ownership reports, offering documents, institutional holdings, and foreign issuer reports.
 
 ![SECFetcher screenshot](store-assets/secfetcher-screenshot-1280x800.png)
 
@@ -14,6 +14,11 @@ SECFetcher is a lightweight browser extension for quickly finding, opening, and 
 - View 8-K material event filings.
 - View DEF 14A proxy statements.
 - View Forms 3, 4, and 5 insider ownership filings.
+- View S-1 and S-3 registration statements.
+- View 424B prospectus filings and FWP free writing prospectuses.
+- View SC 13D and SC 13G beneficial ownership filings.
+- View 13F-HR institutional holdings reports.
+- View 20-F annual reports and 6-K current reports for foreign issuers.
 - Open filings directly on sec.gov.
 - Download the original SEC filing document.
 - Clear ticker and results with one click.
@@ -30,6 +35,15 @@ The SEC EDGAR website is powerful, but repeated lookup is slow when you just wan
 - `Form 3`
 - `Form 4`
 - `Form 5`
+- `S-1`
+- `S-3`
+- `424B`
+- `FWP`
+- `SC 13D`
+- `SC 13G`
+- `13F-HR`
+- `20-F`
+- `6-K`
 
 No account, no analytics, no tracking.
 
@@ -67,8 +81,8 @@ Firefox temporary add-ons are removed when Firefox restarts. A signed Firefox Ad
 Packaged ZIPs are generated locally and attached to GitHub Releases:
 
 ```text
-dist/secfetcher-edge-v1.2.zip
-dist/secfetcher-firefox-v1.2.zip
+dist/secfetcher-edge-v1.3.zip
+dist/secfetcher-firefox-v1.3.zip
 ```
 
 See [RELEASE.md](RELEASE.md) for build, verification, and release steps.
@@ -97,7 +111,7 @@ This project is not affiliated with or endorsed by the U.S. Securities and Excha
 
 ## Keywords
 
-SEC filings, SEC EDGAR, EDGAR browser extension, 10-K lookup, 10-Q lookup, 8-K lookup, proxy statement, DEF 14A, Form 3, Form 4, Form 5, insider filings, insider transactions, beneficial ownership, annual report, quarterly report, financial filings, stock ticker SEC filings, investor research, public company filings, Chrome extension, Edge extension, Firefox extension.
+SEC filings, SEC EDGAR, EDGAR browser extension, 10-K lookup, 10-Q lookup, 8-K lookup, proxy statement, DEF 14A, Form 3, Form 4, Form 5, insider filings, insider transactions, beneficial ownership, S-1, S-3, 424B, FWP, SC 13D, SC 13G, 13F-HR, 20-F, 6-K, annual report, quarterly report, financial filings, stock ticker SEC filings, investor research, public company filings, Chrome extension, Edge extension, Firefox extension.
 
 ## Development
 
@@ -118,7 +132,7 @@ node --check popup.js
 node --check background.js
 ```
 
-Create a Chrome/Chromium ZIP:
+Create Chrome/Edge and Firefox ZIPs:
 
 ```sh
 node scripts/build-store-packages.js
@@ -129,6 +143,7 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 ## Roadmap
 
 - Publish free builds on GitHub Releases.
+- Submit to Chrome Web Store.
 - Submit to Microsoft Edge Add-ons.
 - Submit to Firefox Add-ons.
 - Add optional CIK search.

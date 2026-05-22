@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-edge-v1.2.zip
+dist/secfetcher-edge-v1.3.zip
 ```
 
 Microsoft Edge Add-ons accepts a `.zip` extension package that contains the extension manifest and required files.
@@ -29,7 +29,7 @@ SECFetcher
 Short description:
 
 ```text
-Fast SEC EDGAR filing lookup for reports, events, proxies, and insider filings by ticker.
+Fast SEC EDGAR lookup for reports, events, proxies, insider, offering, ownership, and foreign issuer filings.
 ```
 
 Description:
@@ -43,6 +43,11 @@ Use the popup to search a ticker symbol and fetch recent:
 - 8-K material event filings
 - DEF 14A proxy statements
 - Forms 3, 4, and 5 insider ownership filings
+- S-1 and S-3 registration statements
+- 424B prospectus filings and FWP free writing prospectuses
+- SC 13D and SC 13G beneficial ownership filings
+- 13F-HR institutional holdings reports
+- 20-F annual reports and 6-K current reports for foreign issuers
 
 Each result links directly to the filing on sec.gov and includes a Download button for saving the original SEC filing document.
 
@@ -54,7 +59,7 @@ An optional donation link is available in the popup footer. Donations are not re
 Search terms:
 
 ```text
-SEC, EDGAR, SEC filings, 10-K, 10-Q, 8-K, proxy statement, DEF 14A, insider filings, Form 4, beneficial ownership, finance, investing, investor research, stock ticker
+SEC, EDGAR, SEC filings, 10-K, 10-Q, 8-K, proxy statement, DEF 14A, insider filings, Form 4, beneficial ownership, S-1, S-3, 424B, FWP, 13F, 20-F, 6-K, finance, investing, investor research, stock ticker
 ```
 
 Category:
@@ -109,15 +114,15 @@ icons/icon128.png
 1. Install the extension in Microsoft Edge.
 2. Open the SECFetcher popup.
 3. Enter NVDA.
-4. Click 10-K & 10-Q Filings.
+4. Click 10-K / 10-Q.
 5. Confirm results appear grouped by year.
 6. Click Open and confirm the SEC filing opens.
 7. Click Download and confirm the filing document downloads.
 8. Click the X inside the input and confirm the ticker and results clear.
 ```
 
-Certification note for optional donation link:
+Certification note:
 
 ```text
-SECFetcher is free to use. The popup includes an optional external Stripe donation link. Donations are not required, do not unlock features, and payment information is not processed by the extension.
+Version 1.3 expands user-requested SEC filing lookup categories and reorganizes the popup into grouped filing controls. SECFetcher fetches public SEC data only after a user-entered ticker search, stores only the latest visible result locally, and does not collect personal data. The optional external Stripe donation link remains optional and does not unlock features.
 ```

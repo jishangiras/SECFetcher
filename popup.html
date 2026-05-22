@@ -39,15 +39,35 @@
       border-radius: 8px; 
       box-sizing: border-box;
     }
-    button.primary-btn { 
-      padding: 13px; 
+    .filing-groups {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .filing-group h3 {
+      margin: 0 0 8px;
+      color: #1f2937;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    button.primary-btn {
+      min-height: 44px;
+      padding: 10px 12px;
       width: 100%; 
-      font-size: 15px; 
+      font-size: 14px;
+      line-height: 1.2;
       font-weight: 600; 
       border: none; 
       border-radius: 8px; 
       cursor: pointer; 
-      margin: 6px 0;
       background: #1e3a8a; 
       color: white;
     }
@@ -157,10 +177,41 @@
     <button id="clear-results" class="clear-btn" type="button" aria-label="Clear ticker and results" title="Clear ticker and results">&times;</button>
   </div>
 
-  <button id="fetch-10kq" class="primary-btn">10-K & 10-Q Filings</button>
-  <button id="fetch-8k" class="primary-btn">8-K (Material Events)</button>
-  <button id="fetch-proxy" class="primary-btn">Proxy Statement (DEF 14A)</button>
-  <button id="fetch-insider" class="primary-btn">Insider Filings (Forms 3, 4, 5)</button>
+  <div class="filing-groups">
+    <section class="filing-group" aria-labelledby="core-filings">
+      <h3 id="core-filings">Core filings</h3>
+      <div class="button-grid">
+        <button id="fetch-10kq" class="primary-btn">10-K / 10-Q</button>
+        <button id="fetch-8k" class="primary-btn">8-K</button>
+        <button id="fetch-proxy" class="primary-btn">Proxy DEF 14A</button>
+        <button id="fetch-insider" class="primary-btn">Insider 3/4/5</button>
+      </div>
+    </section>
+
+    <section class="filing-group" aria-labelledby="offering-filings">
+      <h3 id="offering-filings">Offerings & registration</h3>
+      <div class="button-grid">
+        <button id="fetch-registration" class="primary-btn">S-1 / S-3</button>
+        <button id="fetch-prospectus" class="primary-btn">424B / FWP</button>
+      </div>
+    </section>
+
+    <section class="filing-group" aria-labelledby="ownership-filings">
+      <h3 id="ownership-filings">Ownership & funds</h3>
+      <div class="button-grid">
+        <button id="fetch-beneficial" class="primary-btn">SC 13D / 13G</button>
+        <button id="fetch-13f" class="primary-btn">13F-HR</button>
+      </div>
+    </section>
+
+    <section class="filing-group" aria-labelledby="foreign-filings">
+      <h3 id="foreign-filings">Foreign issuers</h3>
+      <div class="button-grid">
+        <button id="fetch-20f" class="primary-btn">20-F</button>
+        <button id="fetch-6k" class="primary-btn">6-K</button>
+      </div>
+    </section>
+  </div>
 
   <div id="results"></div>
 

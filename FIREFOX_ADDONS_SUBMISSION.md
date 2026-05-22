@@ -5,7 +5,7 @@
 Upload:
 
 ```text
-dist/secfetcher-firefox-v1.2.zip
+dist/secfetcher-firefox-v1.3.zip
 ```
 
 Firefox needs a Firefox-specific package because Firefox does not support `background.service_worker` in the same way Chrome and Edge do. The Firefox package uses:
@@ -35,7 +35,7 @@ SECFetcher
 Summary:
 
 ```text
-Fast SEC EDGAR filing lookup for reports, events, proxies, and insider filings by ticker.
+Fast SEC EDGAR lookup for reports, events, proxies, insider, offering, ownership, and foreign issuer filings.
 ```
 
 Description:
@@ -43,7 +43,7 @@ Description:
 ```text
 SECFetcher is a lightweight browser extension for quickly finding, opening, and downloading public SEC filings by stock ticker.
 
-Search a ticker symbol and fetch recent 10-K, 10-Q, 8-K, DEF 14A proxy statement, and Forms 3, 4, and 5 insider ownership filings from official SEC data sources.
+Search a ticker symbol and fetch recent 10-K, 10-Q, 8-K, DEF 14A proxy statement, Forms 3, 4, and 5 insider ownership filings, S-1/S-3 registration statements, 424B/FWP offering documents, SC 13D/13G beneficial ownership filings, 13F-HR institutional holdings, and 20-F/6-K foreign issuer filings from official SEC data sources.
 
 Each filing can be opened directly on sec.gov or downloaded as the original SEC filing document.
 
@@ -59,7 +59,7 @@ Other
 Tags:
 
 ```text
-sec, edgar, filings, finance, investing, 10-k, 10-q, 8-k, proxy, insider
+sec, edgar, filings, finance, investing, 10-k, 10-q, 8-k, proxy, insider, s-1, 13f
 ```
 
 Homepage:
@@ -106,7 +106,7 @@ No analytics, tracking, accounts, ads, required payments, or remote telemetry ar
 1. Install the submitted add-on.
 2. Open the SECFetcher popup.
 3. Enter NVDA.
-4. Click 10-K & 10-Q Filings.
+4. Click 10-K / 10-Q.
 5. Confirm results appear.
 6. Click Open and confirm the SEC filing opens.
 7. Click Download and confirm the filing document downloads.

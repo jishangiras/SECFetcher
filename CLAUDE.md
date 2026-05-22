@@ -3,14 +3,14 @@
 ## What Is SECFetcher?
 SECFetcher is a lightweight browser extension that lets investors, analysts, and students quickly look up and download public SEC EDGAR filings by stock ticker — without navigating EDGAR's slow interface. It is published on the Chrome Web Store, Microsoft Edge Add-ons, and Firefox Add-ons.
 
-**Key value**: Type a ticker → get the last 5-10 filings of each type in one click → open on sec.gov or download the original document. No account, no analytics, no tracking.
+**Key value**: Type a ticker → choose a grouped SEC filing category → open on sec.gov or download the original document. No account, no analytics, no tracking.
 
 ---
 
 ## Tech Stack
 - **Language**: Vanilla JavaScript (ES6+), no framework, no build step
 - **Manifest**: V3 (Chrome/Edge), MV3-compatible Firefox build
-- **Permissions**: `storage` (last results), `activeTab`, no host permissions
+- **Permissions**: `storage` (last results), `downloads`, and SEC host permissions
 - **Background**: `background.js` — service worker, handles `fetchSEC` messages (all network requests go through the background to avoid CORS issues)
 - **Popup**: `popup.html` + `popup.js` — all UI logic, no shadow DOM
 
@@ -28,21 +28,25 @@ SECFetcher is a lightweight browser extension that lets investors, analysts, and
 ## How It Works
 1. User types ticker in popup → clicks a filing type button
 2. `popup.js` sends `{ action: "fetchSEC", url }` to `background.js` via `chrome.runtime.sendMessage`
-3. `background.js` fetches `https://data.sec.gov/submissions/CIK{cik}.json` and EDGAR full-text API
+3. `background.js` fetches SEC ticker and filing metadata from `sec.gov` and `data.sec.gov`
 4. Results rendered in popup with "Open" and "Download" buttons per filing
 5. Results cached in `chrome.storage.local` as `latestResults` for session persistence
 
 ## SEC APIs Used
-- `https://efts.sec.gov/LATEST/search-index?q=%22{ticker}%22&dateRange=custom&...` — ticker → CIK lookup
+- `https://www.sec.gov/files/company_tickers.json` — ticker → CIK lookup
 - `https://data.sec.gov/submissions/CIK{cik}.json` — filing list by CIK
 - `https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/` — filing index
-- `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&...` — fallback
 
 ## Filing Types Supported
 - 10-K & 10-Q (annual + quarterly reports)
 - 8-K (material events)
 - DEF 14A (proxy statements)
-- Forms 3, 4, 5 (insider filings)
+- Forms 3, 4, 5 (insider ownership filings)
+- S-1, S-3 (registration statements)
+- 424B, FWP (offering documents)
+- SC 13D, SC 13G (beneficial ownership filings)
+- 13F-HR (institutional holdings)
+- 20-F, 6-K (foreign issuer filings)
 
 ## Local Development
 No build step required.
@@ -55,7 +59,7 @@ No build step required.
 ```bash
 node scripts/build-store-packages.js   # creates zip files for each store
 ```
-Builds: Chrome/Edge zip, Firefox zip (adjusts manifest for MV3 Firefox differences).
+Builds: Chrome/Edge zip, Firefox zip (adjusts manifest for MV3 Firefox differences). The Edge ZIP is also used for Chrome Web Store submission.
 
 Store listings:
 - Chrome: https://chrome.google.com/webstore/detail/secfetcher

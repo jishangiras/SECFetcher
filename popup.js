@@ -282,3 +282,39 @@ document.getElementById('fetch-insider').addEventListener('click', () => {
   if (!ticker) return alert("Please enter a ticker symbol");
   fetchFilings(ticker, ['3', '4', '5'], "Insider Filings");
 });
+
+document.getElementById('fetch-registration').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['S-1', 'S-1/A', 'S-3', 'S-3/A'], "S-1 & S-3");
+});
+
+document.getElementById('fetch-prospectus').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['424B1', '424B2', '424B3', '424B4', '424B5', '424B7', '424B8', 'FWP'], "424B & FWP");
+});
+
+document.getElementById('fetch-beneficial').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['SC 13D', 'SC 13D/A', 'SC 13G', 'SC 13G/A'], "SC 13D & 13G");
+});
+
+document.getElementById('fetch-13f').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['13F-HR', '13F-HR/A'], "13F-HR");
+});
+
+document.getElementById('fetch-20f').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['20-F', '20-F/A'], "20-F");
+});
+
+document.getElementById('fetch-6k').addEventListener('click', () => {
+  const ticker = tickerElement().value.trim();
+  if (!ticker) return alert("Please enter a ticker symbol");
+  fetchFilings(ticker, ['6-K', '6-K/A'], "6-K");
+});

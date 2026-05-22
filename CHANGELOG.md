@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 - 2026-05-22
+
+- Added grouped filing controls in the popup for easier scanning.
+- Added SEC lookup categories for S-1/S-3 registration statements, 424B/FWP offering documents, SC 13D/13G beneficial ownership filings, 13F-HR institutional holdings, and 20-F/6-K foreign issuer filings.
+- Included amended forms for the new categories where applicable.
+
 ## 1.2.0 - 2026-05-15
 
 - Added an optional Stripe donation link in the popup footer.

@@ -1,8 +1,8 @@
 # SECFetcher Privacy Policy
 
-Effective date: May 12, 2026
+Effective date: May 22, 2026
 
-SECFetcher is a browser extension for finding, opening, and downloading public SEC filings by ticker symbol, including periodic reports, material event reports, proxy statements, and insider ownership filings.
+SECFetcher is a browser extension for finding, opening, and downloading public SEC filings by ticker symbol, including periodic reports, material event reports, proxy statements, insider ownership filings, offering documents, beneficial ownership filings, institutional holdings reports, and foreign issuer reports.
 
 ## Data Collection
 
